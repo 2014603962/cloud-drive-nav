@@ -41,6 +41,10 @@
       "url": "https://kgtkv-101-126-83-128.free.pinggy.net"
     },
     {
+      "name": "线路19",
+      "url": "https://jixru-101-126-81-113.free.pinggy.net"
+    },
+    {
       "name": "线路2",
       "url": "https://zxzrb-180-184-97-136.free.pinggy.net"
     },
@@ -73,6 +77,6 @@
       "url": "https://vkkch-101-126-31-190.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-21T03:17:51.937322",
-  "count": 18
+  "updated_at": "2026-06-21T03:18:23.619036",
+  "count": 19
 }
