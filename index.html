@@ -264,7 +264,7 @@
                     • 隧道列表每分钟自动同步更新<br>
                     • 点击绿色「✓ 在线」的线路即可进入云盘<br>
                     • 本页面地址永久有效，建议收藏保存<br>
-                    • 服务器每15分钟自动启动新隧道，永远有新鲜的
+                    • 服务器每10分钟自动启动新隧道，永远有新鲜的
                 </div>
             </div>
             
@@ -277,10 +277,10 @@
                 </div>
                 <div>
                     不用担心！服务器会自动续杯：<br>
-                    • 每15分钟启动一条新隧道<br>
+                    • 每10分钟启动一条新隧道<br>
                     • 新隧道启动后30秒内同步到这里<br>
                     • 页面每30秒自动刷新，新线路自动出现<br>
-                    • 最多等15分钟就一定有新的可用
+                    • 最多等10分钟就一定有新的可用
                 </div>
             </div>
         </div>
@@ -318,6 +318,12 @@
                 const data = await response.json();
                 tunnels = data.tunnels || [];
                 lastUpdate = data.updated_at || null;
+                
+                // 反转顺序，最新的排前面；重新命名为线路1、线路2...
+                tunnels = tunnels.reverse().map((tunnel, index) => ({
+                    ...tunnel,
+                    name: `线路${index + 1}`
+                }));
                 
                 // 更新时间
                 if (lastUpdate) {
