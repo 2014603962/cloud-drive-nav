@@ -5,6 +5,22 @@
       "url": "https://wafdb-115-190-128-53.free.pinggy.net"
     },
     {
+      "name": "线路10",
+      "url": "https://lhpot-101-126-83-128.free.pinggy.net"
+    },
+    {
+      "name": "线路11",
+      "url": "https://mmksq-180-184-97-136.free.pinggy.net"
+    },
+    {
+      "name": "线路12",
+      "url": "https://fyzjp-180-184-87-78.free.pinggy.net"
+    },
+    {
+      "name": "线路13",
+      "url": "https://aztke-101-126-91-206.free.pinggy.net"
+    },
+    {
       "name": "线路2",
       "url": "https://zxzrb-180-184-97-136.free.pinggy.net"
     },
@@ -35,12 +51,8 @@
     {
       "name": "线路9",
       "url": "https://vkkch-101-126-31-190.free.pinggy.net"
-    },
-    {
-      "name": "线路_autostart",
-      "url": "https://wafdb-115-190-128-53.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-21T03:10:53.295783",
-  "count": 10
+  "updated_at": "2026-06-21T03:11:25.464701",
+  "count": 13
 }
