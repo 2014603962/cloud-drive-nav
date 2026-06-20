@@ -289,9 +289,7 @@
         </div>
     </div>
     <script>
-        // 配置 - 修改成您的 GitHub 用户名和仓库名
-        const GITHUB_USER = '2014603962';
-        const GITHUB_REPO = 'cloud-drive-nav';
+        // 配置 - 使用相对路径加载数据，和页面同域名，兼容性更好
         const DATA_FILE = 'tunnels.json';
         
         // 状态
@@ -308,9 +306,9 @@
             btn.querySelector('span').textContent = '加载中...';
             
             try {
-                // 添加时间戳绕过缓存
+                // 使用相对路径加载，和页面同域名，兼容性更好
                 const timestamp = Date.now();
-                const url = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/${DATA_FILE}?t=${timestamp}`;
+                const url = `${DATA_FILE}?t=${timestamp}`;
                 
                 const response = await fetch(url);
                 if (!response.ok) {
