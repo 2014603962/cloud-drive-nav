@@ -2,65 +2,21 @@
   "tunnels": [
     {
       "name": "线路1",
-      "url": "https://ugvry-180-184-102-49.free.pinggy.net"
-    },
-    {
-      "name": "线路10",
-      "url": "https://kaenx-180-184-102-131.free.pinggy.net"
-    },
-    {
-      "name": "线路11",
-      "url": "https://kwhmu-115-190-114-174.free.pinggy.net"
-    },
-    {
-      "name": "线路12",
-      "url": "https://dvgra-180-184-102-131.free.pinggy.net"
-    },
-    {
-      "name": "线路13",
-      "url": "https://akwrh-180-184-97-227.free.pinggy.net"
-    },
-    {
-      "name": "线路14",
-      "url": "https://cornm-101-126-82-117.free.pinggy.net"
+      "url": "https://wafdb-115-190-128-53.free.pinggy.net"
     },
     {
       "name": "线路2",
-      "url": "https://bgrsx-101-126-82-227.free.pinggy.net"
+      "url": "https://zxzrb-180-184-97-136.free.pinggy.net"
     },
     {
       "name": "线路3",
-      "url": "https://yrfqi-115-190-116-128.free.pinggy.net"
+      "url": "https://kstbq-180-184-97-227.free.pinggy.net"
     },
     {
       "name": "线路4",
-      "url": "https://mcuac-101-126-81-70.free.pinggy.net"
-    },
-    {
-      "name": "线路5",
-      "url": "https://cjjwq-101-126-91-206.free.pinggy.net"
-    },
-    {
-      "name": "线路6",
-      "url": "https://uksmt-115-190-116-128.free.pinggy.net"
-    },
-    {
-      "name": "线路7",
-      "url": "https://yaxfb-101-126-81-196.free.pinggy.net"
-    },
-    {
-      "name": "线路8",
-      "url": "https://yduet-115-190-46-46.free.pinggy.net"
-    },
-    {
-      "name": "线路9",
-      "url": "https://zjbfb-115-190-156-57.free.pinggy.net"
-    },
-    {
-      "name": "线路_autostart",
-      "url": "https://cornm-101-126-82-117.free.pinggy.net"
+      "url": "https://dkdto-101-126-82-117.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-21T03:08:42.827369",
-  "count": 15
+  "updated_at": "2026-06-21T03:10:21.516037",
+  "count": 4
 }
