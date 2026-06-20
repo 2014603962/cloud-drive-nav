@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>豆包云盘 - 隧道导航</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 500px;
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #3370ff 0%, #5b8def 100%);
+            color: white;
+            padding: 30px 24px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        .update-time {
+            font-size: 12px;
+            opacity: 0.8;
+            margin-top: 8px;
+        }
+        .content {
+            padding: 24px;
+        }
+        .refresh-btn {
+            width: 100%;
+            padding: 14px;
+            background: #f5f7fa;
+            border: none;
+            border-radius: 10px;
+            color: #3370ff;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            margin-bottom: 12px;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        .refresh-btn:hover {
+            background: #e8f0ff;
+        }
+        .refresh-btn:active {
+            transform: scale(0.98);
+        }
+        .refresh-btn svg {
+            width: 18px;
+            height: 18px;
+        }
+        .refresh-btn.loading svg {
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .tunnel-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .tunnel-item {
+            border: 2px solid #e8ecf1;
+            border-radius: 12px;
+            padding: 16px;
+            transition: all 0.2s;
+            cursor: pointer;
+            position: relative;
+        }
+        .tunnel-item:hover {
+            border-color: #3370ff;
+            background: #f8faff;
+        }
+        .tunnel-item.online {
+            border-color: #10b981;
+            background: #f0fdf4;
+        }
+        .tunnel-item.offline {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        .tunnel-item.offline:hover {
+            border-color: #e8ecf1;
+            background: white;
+        }
+        .tunnel-item.checking {
+            border-color: #fbbf24;
+            background: #fffbeb;
+        }
+        .tunnel-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+        .tunnel-name {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1f2937;
+        }
+        .status-badge {
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        .status-badge.checking {
+            background: #fef3c7;
+            color: #d97706;
+        }
+        .status-badge.online {
+            background: #d1fae5;
+            color: #059669;
+        }
+        .status-badge.offline {
+            background: #fee2e2;
+            color: #dc2626;
+        }
+        .tunnel-url {
+            font-size: 12px;
+            color: #6b7280;
+            word-break: break-all;
+            font-family: 'SF Mono', Monaco, 'Courier New', monospace;
+            background: #f9fafb;
+            padding: 8px 10px;
+            border-radius: 6px;
+            margin-bottom: 8px;
+        }
+        .tunnel-hint {
+            font-size: 12px;
+            color: #9ca3af;
+        }
+        .tunnel-item.online .tunnel-hint {
+            color: #10b981;
+        }
+        .loading, .error {
+            text-align: center;
+            padding: 40px 20px;
+            color: #9ca3af;
+        }
+        .loading .icon {
+            font-size: 36px;
+            margin-bottom: 10px;
+            animation: bounce 1s infinite;
+        }
+        .error .icon {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .divider {
+            height: 1px;
+            background: #f3f4f6;
+            margin: 20px 0;
+        }
+        .tips {
+            background: #fefce8;
+            border-radius: 10px;
+            padding: 14px;
+            font-size: 13px;
+            color: #854d0e;
+            line-height: 1.7;
+        }
+        .tips-title {
+            font-weight: 600;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .footer {
+            text-align: center;
+            padding: 16px 24px;
+            background: #f9fafb;
+            font-size: 12px;
+            color: #9ca3af;
+        }
+        .auto-refresh {
+            font-size: 11px;
+            color: #9ca3af;
+            text-align: center;
+            margin-top: 8px;
+        }
+        @media (max-width: 480px) {
+            .header {
+                padding: 24px 20px;
+            }
+            .header h1 {
+                font-size: 20px;
+            }
+            .content {
+                padding: 20px;
+            }
+            .tunnel-item {
+                padding: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>☁️ 豆包云盘</h1>
+            <p>隧道导航 - 选择可用的线路访问</p>
+            <div class="update-time" id="updateTime">数据加载中...</div>
+        </div>
+        <div class="content">
+            <button class="refresh-btn" onclick="loadTunnels()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M23 4v6h-6M1 20v-6h6"/>
+                    <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
+                </svg>
+                <span>刷新检测</span>
+            </button>
+            <div class="auto-refresh">每30秒自动刷新数据</div>
+            
+            <div class="tunnel-list" id="tunnelList">
+                <div class="loading">
+                    <div class="icon">🔄</div>
+                    <div>正在加载隧道列表...</div>
+                </div>
+            </div>
+            
+            <div class="divider"></div>
+            <div class="tips">
+                <div class="tips-title">
+                    <span>💡</span>
+                    <span>使用说明</span>
+                </div>
+                <div>
+                    • 隧道列表每分钟自动更新<br>
+                    • 点击绿色「在线」的线路即可进入云盘<br>
+                    • 本页面地址永久有效，建议收藏<br>
+                    • 隧道由服务器自动续杯，不用手动管理
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            豆包云盘 · 极简存储 · 动态导航
+        </div>
+    </div>
+    <script>
+        // 配置 - 修改成您的 GitHub 用户名和仓库名
+        const GITHUB_USER = '2014603962';
+        const GITHUB_REPO = 'cloud-drive-nav';
+        const DATA_FILE = 'tunnels.json';
+        
+        // 状态
+        let tunnels = [];
+        let lastUpdate = null;
+        
+        // 加载隧道数据
+        async function loadTunnels() {
+            const btn = document.querySelector('.refresh-btn');
+            const list = document.getElementById('tunnelList');
+            const timeEl = document.getElementById('updateTime');
+            
+            btn.classList.add('loading');
+            btn.querySelector('span').textContent = '加载中...';
+            
+            try {
+                // 添加时间戳绕过缓存
+                const timestamp = Date.now();
+                const url = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/${DATA_FILE}?t=${timestamp}`;
+                
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error('加载失败');
+                }
+                
+                const data = await response.json();
+                tunnels = data.tunnels || [];
+                lastUpdate = data.updated_at || null;
+                
+                // 更新时间
+                if (lastUpdate) {
+                    const date = new Date(lastUpdate);
+                    timeEl.textContent = `最后更新: ${date.toLocaleString('zh-CN')}`;
+                }
+                
+                // 渲染列表
+                renderTunnels();
+                
+                // 开始检测状态
+                checkAllTunnels();
+                
+            } catch (error) {
+                list.innerHTML = `
+                    <div class="error">
+                        <div class="icon">❌</div>
+                        <div>加载失败，请稍后重试</div>
+                        <div style="font-size: 12px; margin-top: 8px;">${error.message}</div>
+                    </div>
+                `;
+            }
+            
+            btn.classList.remove('loading');
+            btn.querySelector('span').textContent = '刷新检测';
+        }
+        
+        // 渲染隧道列表
+        function renderTunnels() {
+            const list = document.getElementById('tunnelList');
+            
+            if (tunnels.length === 0) {
+                list.innerHTML = `
+                    <div class="error">
+                        <div class="icon">🔌</div>
+                        <div>暂无可用隧道</div>
+                        <div style="font-size: 12px; margin-top: 8px;">请稍后刷新查看</div>
+                    </div>
+                `;
+                return;
+            }
+            
+            list.innerHTML = '';
+            
+            tunnels.forEach((tunnel, index) => {
+                const item = document.createElement('div');
+                item.className = 'tunnel-item checking';
+                item.id = 'tunnel-' + index;
+                item.innerHTML = `
+                    <div class="tunnel-header">
+                        <span class="tunnel-name">${tunnel.name}</span>
+                        <span class="status-badge checking">检测中...</span>
+                    </div>
+                    <div class="tunnel-url">${tunnel.url}</div>
+                    <div class="tunnel-hint">正在检测可用性...</div>
+                `;
+                list.appendChild(item);
+            });
+        }
+        
+        // 检测单个隧道
+        async function checkTunnel(index) {
+            const tunnel = tunnels[index];
+            const item = document.getElementById('tunnel-' + index);
+            if (!item) return;
+            
+            const badge = item.querySelector('.status-badge');
+            const hint = item.querySelector('.tunnel-hint');
+            
+            try {
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 8000);
+                
+                const response = await fetch(tunnel.url + '/api/health', {
+                    method: 'GET',
+                    signal: controller.signal,
+                    mode: 'no-cors'
+                });
+                
+                clearTimeout(timeoutId);
+                
+                // no-cors模式下无法读取响应内容，只要不报错就认为在线
+                item.className = 'tunnel-item online';
+                badge.className = 'status-badge online';
+                badge.textContent = '✓ 在线';
+                hint.textContent = '点击进入云盘';
+                item.onclick = () => window.open(tunnel.url, '_blank');
+                
+            } catch (error) {
+                item.className = 'tunnel-item offline';
+                badge.className = 'status-badge offline';
+                badge.textContent = '✗ 离线';
+                hint.textContent = '线路已失效，请换一个';
+                item.onclick = null;
+            }
+        }
+        
+        // 检测所有隧道
+        function checkAllTunnels() {
+            tunnels.forEach((_, index) => {
+                setTimeout(() => checkTunnel(index), index * 300);
+            });
+        }
+        
+        // 页面加载时自动加载
+        window.addEventListener('load', () => {
+            loadTunnels();
+            
+            // 每30秒自动刷新数据
+            setInterval(loadTunnels, 30000);
+        });
+    </script>
+</body>
+</html>
