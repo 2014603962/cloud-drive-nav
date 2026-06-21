@@ -9,6 +9,10 @@
       "url": "https://kjhof-180-184-97-136.free.pinggy.net"
     },
     {
+      "name": "线路11",
+      "url": "https://bfumo-101-126-83-102.free.pinggy.net"
+    },
+    {
       "name": "线路2",
       "url": "https://rxhmp-101-126-83-237.free.pinggy.net"
     },
@@ -39,8 +43,12 @@
     {
       "name": "线路9",
       "url": "https://lcnov-115-190-116-137.free.pinggy.net"
+    },
+    {
+      "name": "线路_autostart",
+      "url": "https://kjhof-180-184-97-136.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-21T19:24:29.088692",
-  "count": 10
+  "updated_at": "2026-06-21T19:25:00.851324",
+  "count": 12
 }
