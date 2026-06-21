@@ -9,6 +9,14 @@
       "url": "https://tekgi-115-190-22-11.free.pinggy.net"
     },
     {
+      "name": "线路11",
+      "url": "https://fjsnm-101-126-91-206.free.pinggy.net"
+    },
+    {
+      "name": "线路12",
+      "url": "https://hsdez-101-126-91-206.free.pinggy.net"
+    },
+    {
       "name": "线路2",
       "url": "https://mrxae-101-126-83-128.free.pinggy.net"
     },
@@ -31,16 +39,8 @@
     {
       "name": "线路7",
       "url": "https://whkyf-115-190-46-46.free.pinggy.net"
-    },
-    {
-      "name": "线路8",
-      "url": "https://abzcp-101-126-88-195.free.pinggy.net"
-    },
-    {
-      "name": "线路9",
-      "url": "https://npzne-101-126-45-29.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-22T07:25:16.779996",
+  "updated_at": "2026-06-22T07:25:49.033952",
   "count": 10
 }
