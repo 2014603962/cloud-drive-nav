@@ -13,6 +13,10 @@
       "url": "https://bfumo-101-126-83-102.free.pinggy.net"
     },
     {
+      "name": "线路12",
+      "url": "https://prigd-115-190-116-128.free.pinggy.net"
+    },
+    {
       "name": "线路2",
       "url": "https://rxhmp-101-126-83-237.free.pinggy.net"
     },
@@ -49,6 +53,6 @@
       "url": "https://bfumo-101-126-83-102.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-21T19:29:47.927760",
-  "count": 12
+  "updated_at": "2026-06-21T19:30:19.640180",
+  "count": 13
 }
