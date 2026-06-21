@@ -9,6 +9,10 @@
       "url": "https://ygllj-115-190-116-107.free.pinggy.net"
     },
     {
+      "name": "线路11",
+      "url": "https://tsbgr-180-184-87-78.free.pinggy.net"
+    },
+    {
       "name": "线路2",
       "url": "https://rbyvb-115-190-63-37.free.pinggy.net"
     },
@@ -25,10 +29,6 @@
       "url": "https://qtyqg-101-126-83-102.free.pinggy.net"
     },
     {
-      "name": "线路6",
-      "url": "https://thpai-115-190-114-174.free.pinggy.net"
-    },
-    {
       "name": "线路7",
       "url": "https://jrbun-101-126-31-190.free.pinggy.net"
     },
@@ -41,6 +41,6 @@
       "url": "https://tsysu-101-126-82-227.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-22T02:06:49.493841",
+  "updated_at": "2026-06-22T02:07:21.752807",
   "count": 10
 }
