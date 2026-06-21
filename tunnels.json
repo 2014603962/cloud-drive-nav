@@ -5,6 +5,10 @@
       "url": "https://rohrl-101-126-83-83.free.pinggy.net"
     },
     {
+      "name": "线路10",
+      "url": "https://ntuln-101-126-18-14.free.pinggy.net"
+    },
+    {
       "name": "线路2",
       "url": "https://uyvtq-180-184-102-49.free.pinggy.net"
     },
@@ -41,6 +45,6 @@
       "url": "https://jpqdc-101-126-18-14.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-21T09:32:36.832362",
-  "count": 10
+  "updated_at": "2026-06-21T09:33:08.422642",
+  "count": 11
 }
