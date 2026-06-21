@@ -5,6 +5,10 @@
       "url": "https://xvopp-101-126-82-117.free.pinggy.net"
     },
     {
+      "name": "线路10",
+      "url": "https://nybne-101-126-83-237.free.pinggy.net"
+    },
+    {
       "name": "线路2",
       "url": "https://ebixh-115-190-116-137.free.pinggy.net"
     },
@@ -35,12 +39,8 @@
     {
       "name": "线路9",
       "url": "https://xocvx-115-190-156-57.free.pinggy.net"
-    },
-    {
-      "name": "线路_autostart",
-      "url": "https://xvopp-101-126-82-117.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-22T03:00:44.865943",
+  "updated_at": "2026-06-22T03:01:16.610860",
   "count": 10
 }
