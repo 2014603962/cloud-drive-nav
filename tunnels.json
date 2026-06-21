@@ -9,6 +9,10 @@
       "url": "https://igmxy-101-126-46-191.free.pinggy.net"
     },
     {
+      "name": "线路11",
+      "url": "https://ptbqp-115-190-156-127.free.pinggy.net"
+    },
+    {
       "name": "线路2",
       "url": "https://fbvqi-115-190-114-174.free.pinggy.net"
     },
@@ -33,10 +37,6 @@
       "url": "https://hzhck-101-126-83-102.free.pinggy.net"
     },
     {
-      "name": "线路8",
-      "url": "https://ybqgm-115-190-156-57.free.pinggy.net"
-    },
-    {
       "name": "线路9",
       "url": "https://hcdsw-115-190-156-127.free.pinggy.net"
     },
@@ -45,6 +45,6 @@
       "url": "https://wmcdf-180-184-87-78.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-21T10:06:06.807007",
+  "updated_at": "2026-06-21T10:06:39.047957",
   "count": 11
 }
