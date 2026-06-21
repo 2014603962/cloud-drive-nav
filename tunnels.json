@@ -5,6 +5,10 @@
       "url": "https://fmijf-101-126-81-70.free.pinggy.net"
     },
     {
+      "name": "线路10",
+      "url": "https://ryggo-115-190-116-128.free.pinggy.net"
+    },
+    {
       "name": "线路2",
       "url": "https://atbzm-115-190-60-188.free.pinggy.net"
     },
@@ -35,12 +39,8 @@
     {
       "name": "线路9",
       "url": "https://khqnr-180-184-102-49.free.pinggy.net"
-    },
-    {
-      "name": "线路_autostart",
-      "url": "https://jnpgf-180-184-97-136.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-21T21:31:14.141861",
+  "updated_at": "2026-06-21T21:31:45.851881",
   "count": 10
 }
