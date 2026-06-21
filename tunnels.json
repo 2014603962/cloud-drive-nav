@@ -5,6 +5,10 @@
       "url": "https://nsfqd-115-190-156-127.free.pinggy.net"
     },
     {
+      "name": "线路10",
+      "url": "https://ygllj-115-190-116-107.free.pinggy.net"
+    },
+    {
       "name": "线路2",
       "url": "https://rbyvb-115-190-63-37.free.pinggy.net"
     },
@@ -35,12 +39,8 @@
     {
       "name": "线路9",
       "url": "https://tsysu-101-126-82-227.free.pinggy.net"
-    },
-    {
-      "name": "线路_autostart",
-      "url": "https://nsfqd-115-190-156-127.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-22T01:56:44.205159",
+  "updated_at": "2026-06-22T01:57:15.894752",
   "count": 10
 }
