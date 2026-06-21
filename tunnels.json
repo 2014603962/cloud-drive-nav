@@ -9,6 +9,10 @@
       "url": "https://qarit-115-190-128-53.free.pinggy.net"
     },
     {
+      "name": "线路11",
+      "url": "https://ycjny-180-184-102-49.free.pinggy.net"
+    },
+    {
       "name": "线路2",
       "url": "https://gwnlp-101-126-81-70.free.pinggy.net"
     },
@@ -35,12 +39,8 @@
     {
       "name": "线路8",
       "url": "https://lcxwx-101-126-83-237.free.pinggy.net"
-    },
-    {
-      "name": "线路9",
-      "url": "https://flprw-101-126-45-29.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-22T03:51:22.144645",
+  "updated_at": "2026-06-22T03:51:58.775578",
   "count": 10
 }
