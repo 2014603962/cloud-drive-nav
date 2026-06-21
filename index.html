@@ -353,7 +353,7 @@
                     <span>测速排序</span>
                 </button>
             </div>
-            <div class="auto-refresh">每30秒自动刷新数据 · 测速后自动按速度排序</div>
+            <div class="auto-refresh">手动刷新获取最新线路 · 测速后自动按速度排序</div>
             
             <div class="tunnel-list" id="tunnelList">
                 <div class="loading">
@@ -387,7 +387,7 @@
                     不用担心！服务器会自动续杯：<br>
                     • 每10分钟启动一条新隧道<br>
                     • 新隧道启动后30秒内同步到这里<br>
-                    • 页面每30秒自动刷新，新线路自动出现<br>
+                    • 手动点击「刷新列表」即可看到新线路<br>
                     • 最多等10分钟就一定有新的可用
                 </div>
             </div>
@@ -734,8 +734,7 @@
         window.addEventListener('load', () => {
             loadTunnels();
             
-            // 每30秒自动刷新数据
-            setInterval(loadTunnels, 30000);
+            // 已移除自动刷新，改为手动刷新
         });
     </script>
 </body>
