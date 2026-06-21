@@ -21,10 +21,26 @@
       "url": "https://aiocr-101-126-83-197.free.pinggy.net"
     },
     {
+      "name": "线路6",
+      "url": "https://lwqvn-101-126-81-113.free.pinggy.net"
+    },
+    {
+      "name": "线路7",
+      "url": "https://lfedy-115-190-156-127.free.pinggy.net"
+    },
+    {
+      "name": "线路8",
+      "url": "https://lcxwx-101-126-83-237.free.pinggy.net"
+    },
+    {
+      "name": "线路9",
+      "url": "https://flprw-101-126-45-29.free.pinggy.net"
+    },
+    {
       "name": "线路_autostart",
       "url": "https://xwtzb-101-126-81-32.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-22T03:43:22.988658",
-  "count": 6
+  "updated_at": "2026-06-22T03:43:55.203934",
+  "count": 10
 }
