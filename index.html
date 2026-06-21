@@ -50,8 +50,13 @@
         .content {
             padding: 24px;
         }
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
         .refresh-btn {
-            width: 100%;
+            flex: 1;
             padding: 14px;
             background: #f5f7fa;
             border: none;
@@ -60,7 +65,6 @@
             font-size: 15px;
             font-weight: 500;
             cursor: pointer;
-            margin-bottom: 12px;
             transition: all 0.2s;
             display: flex;
             align-items: center;
@@ -78,6 +82,35 @@
             height: 18px;
         }
         .refresh-btn.loading svg {
+            animation: spin 1s linear infinite;
+        }
+        .speedtest-btn {
+            flex: 1;
+            padding: 14px;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        .speedtest-btn:hover {
+            opacity: 0.9;
+        }
+        .speedtest-btn:active {
+            transform: scale(0.98);
+        }
+        .speedtest-btn svg {
+            width: 18px;
+            height: 18px;
+        }
+        .speedtest-btn.testing svg {
             animation: spin 1s linear infinite;
         }
         @keyframes spin {
@@ -105,6 +138,23 @@
             border-color: #10b981;
             background: #f0fdf4;
         }
+        .tunnel-item.best {
+            border-color: #f59e0b;
+            background: #fffbeb;
+            box-shadow: 0 4px 12px rgba(245, 158, 11, 0.2);
+        }
+        .tunnel-item.best::before {
+            content: '⚡ 最快';
+            position: absolute;
+            top: -10px;
+            right: 16px;
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            color: white;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 10px;
+        }
         .tunnel-item.offline {
             opacity: 0.6;
             cursor: not-allowed;
@@ -116,6 +166,10 @@
         .tunnel-item.checking {
             border-color: #fbbf24;
             background: #fffbeb;
+        }
+        .tunnel-item.testing {
+            border-color: #8b5cf6;
+            background: #faf5ff;
         }
         .tunnel-header {
             display: flex;
@@ -138,6 +192,10 @@
             background: #fef3c7;
             color: #d97706;
         }
+        .status-badge.testing {
+            background: #ede9fe;
+            color: #7c3aed;
+        }
         .status-badge.online {
             background: #d1fae5;
             color: #059669;
@@ -156,12 +214,46 @@
             border-radius: 6px;
             margin-bottom: 8px;
         }
+        .tunnel-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
         .tunnel-hint {
             font-size: 12px;
             color: #9ca3af;
         }
         .tunnel-item.online .tunnel-hint {
             color: #10b981;
+        }
+        .tunnel-speed {
+            font-size: 13px;
+            font-weight: 600;
+            color: #6b7280;
+        }
+        .tunnel-item.online .tunnel-speed {
+            color: #059669;
+        }
+        .tunnel-item.best .tunnel-speed {
+            color: #d97706;
+            font-size: 14px;
+        }
+        .speed-bar {
+            height: 4px;
+            background: #e5e7eb;
+            border-radius: 2px;
+            margin-top: 8px;
+            overflow: hidden;
+        }
+        .speed-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #10b981 0%, #34d399 100%);
+            border-radius: 2px;
+            transition: width 0.5s ease;
+            width: 0%;
+        }
+        .tunnel-item.best .speed-bar-fill {
+            background: linear-gradient(90deg, #f59e0b 0%, #fbbf24 100%);
         }
         .loading, .error {
             text-align: center;
@@ -214,6 +306,11 @@
             text-align: center;
             margin-top: 8px;
         }
+        .speed-progress {
+            font-size: 11px;
+            color: #8b5cf6;
+            margin-top: 4px;
+        }
         @media (max-width: 480px) {
             .header {
                 padding: 24px 20px;
@@ -227,6 +324,9 @@
             .tunnel-item {
                 padding: 14px;
             }
+            .btn-group {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
@@ -234,18 +334,26 @@
     <div class="container">
         <div class="header">
             <h1>☁️ 豆包云盘</h1>
-            <p>隧道导航 - 选择可用的线路访问</p>
+            <p>隧道导航 - 智能测速，最优线路优先</p>
             <div class="update-time" id="updateTime">数据加载中...</div>
         </div>
         <div class="content">
-            <button class="refresh-btn" onclick="loadTunnels()">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M23 4v6h-6M1 20v-6h6"/>
-                    <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
-                </svg>
-                <span>刷新检测</span>
-            </button>
-            <div class="auto-refresh">每30秒自动刷新数据</div>
+            <div class="btn-group">
+                <button class="refresh-btn" onclick="loadTunnels()">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M23 4v6h-6M1 20v-6h6"/>
+                        <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
+                    </svg>
+                    <span>刷新列表</span>
+                </button>
+                <button class="speedtest-btn" onclick="runSpeedTest()">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                    </svg>
+                    <span>测速排序</span>
+                </button>
+            </div>
+            <div class="auto-refresh">每30秒自动刷新数据 · 测速后自动按速度排序</div>
             
             <div class="tunnel-list" id="tunnelList">
                 <div class="loading">
@@ -261,10 +369,10 @@
                     <span>使用说明</span>
                 </div>
                 <div>
-                    • 隧道列表每分钟自动同步更新<br>
-                    • 点击绿色「✓ 在线」的线路即可进入云盘<br>
-                    • 本页面地址永久有效，建议收藏保存<br>
-                    • 服务器每10分钟自动启动新隧道，永远有新鲜的
+                    • 点击「测速排序」自动测试每条线路速度<br>
+                    • 最快的线路会标记 ⚡ 并排在最前面<br>
+                    • 失效线路自动过滤，只保留可用线路<br>
+                    • 服务器每10分钟自动补充新线路
                 </div>
             </div>
             
@@ -285,16 +393,28 @@
             </div>
         </div>
         <div class="footer">
-            豆包云盘 · 极简存储 · 动态导航
+            豆包云盘 · 极简存储 · 智能测速导航
         </div>
     </div>
     <script>
         // 配置 - 使用相对路径加载数据，和页面同域名，兼容性更好
         const DATA_FILE = 'tunnels.json';
+        const SPEED_TEST_SIZE = 100; // 测速文件大小，单位 KB
         
         // 状态
         let tunnels = [];
         let lastUpdate = null;
+        let isSpeedTesting = false;
+        let speedTestResults = {}; // 存储测速结果
+        
+        // 格式化速度
+        function formatSpeed(kbps) {
+            if (kbps < 1024) {
+                return `${kbps.toFixed(1)} KB/s`;
+            } else {
+                return `${(kbps / 1024).toFixed(2)} MB/s`;
+            }
+        }
         
         // 加载隧道数据
         async function loadTunnels() {
@@ -322,8 +442,13 @@
                 // 反转顺序，最新的排前面；重新命名为线路1、线路2...
                 tunnels = tunnels.reverse().map((tunnel, index) => ({
                     ...tunnel,
-                    name: `线路${index + 1}`
+                    name: `线路${index + 1}`,
+                    status: 'unknown',
+                    speed: null
                 }));
+                
+                // 清空之前的测速结果
+                speedTestResults = {};
                 
                 // 更新时间
                 if (lastUpdate) {
@@ -348,7 +473,7 @@
             }
             
             btn.classList.remove('loading');
-            btn.querySelector('span').textContent = '刷新检测';
+            btn.querySelector('span').textContent = '刷新列表';
         }
         
         // 渲染隧道列表
@@ -378,7 +503,13 @@
                         <span class="status-badge checking">检测中...</span>
                     </div>
                     <div class="tunnel-url">${tunnel.url}</div>
-                    <div class="tunnel-hint">正在检测可用性...</div>
+                    <div class="tunnel-info">
+                        <span class="tunnel-hint">正在检测可用性...</span>
+                        <span class="tunnel-speed"></span>
+                    </div>
+                    <div class="speed-bar">
+                        <div class="speed-bar-fill" style="width: 0%"></div>
+                    </div>
                 `;
                 list.appendChild(item);
             });
@@ -406,6 +537,7 @@
                 clearTimeout(timeoutId);
                 
                 // no-cors模式下无法读取响应内容，只要不报错就认为在线
+                tunnel.status = 'online';
                 item.className = 'tunnel-item online';
                 badge.className = 'status-badge online';
                 badge.textContent = '✓ 在线';
@@ -413,10 +545,11 @@
                 item.onclick = () => window.open(tunnel.url, '_blank');
                 
             } catch (error) {
+                tunnel.status = 'offline';
                 item.className = 'tunnel-item offline';
                 badge.className = 'status-badge offline';
                 badge.textContent = '✗ 离线';
-                hint.textContent = '线路已失效，请换一个';
+                hint.textContent = '线路已失效';
                 item.onclick = null;
             }
         }
@@ -424,8 +557,177 @@
         // 检测所有隧道
         function checkAllTunnels() {
             tunnels.forEach((_, index) => {
-                setTimeout(() => checkTunnel(index), index * 300);
+                setTimeout(() => checkTunnel(index), index * 200);
             });
+        }
+        
+        // 测试单个隧道速度
+        async function testTunnelSpeed(index) {
+            const tunnel = tunnels[index];
+            const item = document.getElementById('tunnel-' + index);
+            if (!item || tunnel.status !== 'online') return;
+            
+            const badge = item.querySelector('.status-badge');
+            const speedEl = item.querySelector('.tunnel-speed');
+            const hint = item.querySelector('.tunnel-hint');
+            const barFill = item.querySelector('.speed-bar-fill');
+            
+            // 切换到测速状态
+            item.classList.add('testing');
+            item.classList.remove('online');
+            badge.className = 'status-badge testing';
+            badge.textContent = '测速中...';
+            hint.textContent = '正在测试下载速度...';
+            speedEl.textContent = '';
+            
+            try {
+                const startTime = performance.now();
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 15000);
+                
+                const response = await fetch(tunnel.url + '/api/speedtest?size=' + SPEED_TEST_SIZE, {
+                    method: 'GET',
+                    signal: controller.signal
+                });
+                
+                if (!response.ok) {
+                    throw new Error('测速失败');
+                }
+                
+                // 读取完整数据
+                const blob = await response.blob();
+                const endTime = performance.now();
+                
+                clearTimeout(timeoutId);
+                
+                // 计算速度 (KB/s)
+                const duration = (endTime - startTime) / 1000; // 秒
+                const sizeKB = blob.size / 1024; // KB
+                const speedKbps = sizeKB / duration;
+                
+                // 保存结果
+                tunnel.speed = speedKbps;
+                speedTestResults[tunnel.url] = speedKbps;
+                
+                // 更新显示
+                item.classList.remove('testing');
+                item.classList.add('online');
+                badge.className = 'status-badge online';
+                badge.textContent = '✓ 在线';
+                hint.textContent = '点击进入云盘';
+                speedEl.textContent = formatSpeed(speedKbps);
+                
+                // 更新速度条
+                const maxSpeed = 200; // 假设最大200KB/s
+                const percent = Math.min((speedKbps / maxSpeed) * 100, 100);
+                barFill.style.width = percent + '%';
+                
+                return speedKbps;
+                
+            } catch (error) {
+                // 测速失败，不影响在线状态
+                item.classList.remove('testing');
+                item.classList.add('online');
+                badge.className = 'status-badge online';
+                badge.textContent = '✓ 在线';
+                hint.textContent = '测速失败，点击进入';
+                speedEl.textContent = '测速失败';
+                tunnel.speed = 0;
+                
+                return 0;
+            }
+        }
+        
+        // 运行全部测速并排序
+        async function runSpeedTest() {
+            if (isSpeedTesting) return;
+            
+            const btn = document.querySelector('.speedtest-btn');
+            isSpeedTesting = true;
+            btn.classList.add('testing');
+            btn.querySelector('span').textContent = '测速中...';
+            
+            // 先确保所有线路都检测过
+            const onlineTunnels = tunnels.filter(t => t.status === 'online');
+            
+            // 对每条在线的线路进行测速
+            for (let i = 0; i < tunnels.length; i++) {
+                if (tunnels[i].status === 'online') {
+                    await testTunnelSpeed(i);
+                }
+            }
+            
+            // 按速度排序
+            sortTunnelsBySpeed();
+            
+            isSpeedTesting = false;
+            btn.classList.remove('testing');
+            btn.querySelector('span').textContent = '测速排序';
+        }
+        
+        // 按速度排序隧道
+        function sortTunnelsBySpeed() {
+            // 分离在线和离线的
+            const onlineTunnels = tunnels.filter(t => t.status === 'online' && t.speed !== null && t.speed > 0);
+            const otherTunnels = tunnels.filter(t => !(t.status === 'online' && t.speed !== null && t.speed > 0));
+            
+            // 在线的按速度从快到慢排序
+            onlineTunnels.sort((a, b) => (b.speed || 0) - (a.speed || 0));
+            
+            // 重新命名
+            onlineTunnels.forEach((tunnel, index) => {
+                tunnel.name = `线路${index + 1}`;
+            });
+            
+            otherTunnels.forEach((tunnel, index) => {
+                tunnel.name = `线路${onlineTunnels.length + index + 1}`;
+            });
+            
+            // 合并
+            tunnels = [...onlineTunnels, ...otherTunnels];
+            
+            // 重新渲染
+            renderTunnels();
+            
+            // 恢复状态显示
+            tunnels.forEach((tunnel, index) => {
+                const item = document.getElementById('tunnel-' + index);
+                if (!item) return;
+                
+                const badge = item.querySelector('.status-badge');
+                const speedEl = item.querySelector('.tunnel-speed');
+                const hint = item.querySelector('.tunnel-hint');
+                const barFill = item.querySelector('.speed-bar-fill');
+                
+                if (tunnel.status === 'online') {
+                    item.className = 'tunnel-item online';
+                    badge.className = 'status-badge online';
+                    badge.textContent = '✓ 在线';
+                    hint.textContent = '点击进入云盘';
+                    item.onclick = () => window.open(tunnel.url, '_blank');
+                    
+                    if (tunnel.speed && tunnel.speed > 0) {
+                        speedEl.textContent = formatSpeed(tunnel.speed);
+                        const maxSpeed = 200;
+                        const percent = Math.min((tunnel.speed / maxSpeed) * 100, 100);
+                        barFill.style.width = percent + '%';
+                    }
+                } else {
+                    item.className = 'tunnel-item offline';
+                    badge.className = 'status-badge offline';
+                    badge.textContent = '✗ 离线';
+                    hint.textContent = '线路已失效';
+                    item.onclick = null;
+                }
+            });
+            
+            // 标记最快的线路
+            if (onlineTunnels.length > 0) {
+                const firstItem = document.getElementById('tunnel-0');
+                if (firstItem) {
+                    firstItem.classList.add('best');
+                }
+            }
         }
         
         // 页面加载时自动加载
