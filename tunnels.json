@@ -21,10 +21,26 @@
       "url": "https://pmnde-180-184-97-136.free.pinggy.net"
     },
     {
+      "name": "线路6",
+      "url": "https://dlpfj-101-126-83-237.free.pinggy.net"
+    },
+    {
+      "name": "线路7",
+      "url": "https://txrov-101-126-83-237.free.pinggy.net"
+    },
+    {
+      "name": "线路8",
+      "url": "https://pefqe-180-184-102-49.free.pinggy.net"
+    },
+    {
+      "name": "线路9",
+      "url": "https://xocvx-115-190-156-57.free.pinggy.net"
+    },
+    {
       "name": "线路_autostart",
       "url": "https://xvopp-101-126-82-117.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-22T02:50:39.812229",
-  "count": 6
+  "updated_at": "2026-06-22T02:51:11.472544",
+  "count": 10
 }
