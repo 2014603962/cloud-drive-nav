@@ -2,45 +2,29 @@
   "tunnels": [
     {
       "name": "线路1",
-      "url": "https://stohh-115-190-116-137.free.pinggy.net"
-    },
-    {
-      "name": "线路10",
-      "url": "https://lbbke-101-126-81-196.free.pinggy.net"
-    },
-    {
-      "name": "线路11",
-      "url": "https://ajhoj-180-184-102-131.free.pinggy.net"
-    },
-    {
-      "name": "线路12",
-      "url": "https://vmhbs-180-184-97-136.free.pinggy.net"
-    },
-    {
-      "name": "线路13",
-      "url": "https://vyuzl-101-126-81-32.free.pinggy.net"
-    },
-    {
-      "name": "线路14",
-      "url": "https://lxfrv-101-126-83-102.free.pinggy.net"
-    },
-    {
-      "name": "线路15",
-      "url": "https://ikhug-101-126-81-32.free.pinggy.net"
-    },
-    {
-      "name": "线路16",
-      "url": "https://kbsik-101-126-83-83.free.pinggy.net"
-    },
-    {
-      "name": "线路17",
-      "url": "https://topnp-101-126-46-191.free.pinggy.net"
+      "url": "https://mxgxt-180-184-97-101.free.pinggy.net"
     },
     {
       "name": "线路2",
-      "url": "https://muylx-115-190-156-127.free.pinggy.net"
+      "url": "https://ufngj-101-126-31-190.free.pinggy.net"
+    },
+    {
+      "name": "线路3",
+      "url": "https://fkeuw-115-190-60-188.free.pinggy.net"
+    },
+    {
+      "name": "线路4",
+      "url": "https://toftp-101-126-82-227.free.pinggy.net"
+    },
+    {
+      "name": "线路5",
+      "url": "https://ffdzm-101-126-88-195.free.pinggy.net"
+    },
+    {
+      "name": "线路_autostart",
+      "url": "https://mxgxt-180-184-97-101.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-22T11:45:43.751436",
-  "count": 10
+  "updated_at": "2026-06-22T17:41:07.817488",
+  "count": 6
 }
