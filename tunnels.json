@@ -1,11 +1,6 @@
 {
   "tunnels": [
     {
-      "name": "线路23",
-      "num": "23",
-      "url": "https://cghsj-101-126-47-141.free.pinggy.net"
-    },
-    {
       "name": "线路19",
       "num": "19",
       "url": "https://gczgx-101-126-47-141.free.pinggy.net"
@@ -31,16 +26,11 @@
       "url": "https://jfhem-101-126-81-32.free.pinggy.net"
     },
     {
-      "name": "线路18",
-      "num": "18",
-      "url": "https://vngqr-101-126-88-195.free.pinggy.net"
-    },
-    {
       "name": "线路17",
       "num": "17",
       "url": "https://ezlte-180-184-97-136.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-23T03:42:28.984725",
-  "count": 8
+  "updated_at": "2026-06-23T03:42:36.248309",
+  "count": 6
 }
