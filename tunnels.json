@@ -1,14 +1,9 @@
 {
   "tunnels": [
     {
-      "name": "线路47",
-      "num": "47",
-      "url": "https://gkhaq-101-126-83-237.free.pinggy.net"
-    },
-    {
-      "name": "线路51",
-      "num": "51",
-      "url": "https://gkjsn-180-184-87-220.free.pinggy.net"
+      "name": "线路55",
+      "num": "55",
+      "url": "https://qkqtf-101-126-81-113.free.pinggy.net"
     },
     {
       "name": "线路56",
@@ -16,11 +11,11 @@
       "url": "https://bnrod-115-190-114-174.free.pinggy.net"
     },
     {
-      "name": "线路55",
-      "num": "55",
-      "url": "https://qkqtf-101-126-81-113.free.pinggy.net"
+      "name": "线路47",
+      "num": "47",
+      "url": "https://gkhaq-101-126-83-237.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-23T04:09:02.841614",
-  "count": 4
+  "updated_at": "2026-06-23T04:09:34.803536",
+  "count": 3
 }
