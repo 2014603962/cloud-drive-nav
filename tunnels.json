@@ -1,14 +1,24 @@
 {
   "tunnels": [
     {
-      "name": "线路58",
-      "num": "58",
-      "url": "https://hxuam-115-190-116-107.free.pinggy.net"
+      "name": "线路65",
+      "num": "65",
+      "url": "https://mgker-101-126-82-227.free.pinggy.net"
     },
     {
-      "name": "线路62",
-      "num": "62",
-      "url": "https://amvpx-101-126-83-83.free.pinggy.net"
+      "name": "线路59",
+      "num": "59",
+      "url": "https://ebftc-115-190-60-188.free.pinggy.net"
+    },
+    {
+      "name": "线路55",
+      "num": "55",
+      "url": "https://qkqtf-101-126-81-113.free.pinggy.net"
+    },
+    {
+      "name": "线路64",
+      "num": "64",
+      "url": "https://koqxz-180-184-97-156.free.pinggy.net"
     },
     {
       "name": "线路61",
@@ -21,24 +31,14 @@
       "url": "https://cugtc-101-126-81-113.free.pinggy.net"
     },
     {
-      "name": "线路55",
-      "num": "55",
-      "url": "https://qkqtf-101-126-81-113.free.pinggy.net"
+      "name": "线路62",
+      "num": "62",
+      "url": "https://amvpx-101-126-83-83.free.pinggy.net"
     },
     {
-      "name": "线路59",
-      "num": "59",
-      "url": "https://ebftc-115-190-60-188.free.pinggy.net"
-    },
-    {
-      "name": "线路64",
-      "num": "64",
-      "url": "https://koqxz-180-184-97-156.free.pinggy.net"
-    },
-    {
-      "name": "线路65",
-      "num": "65",
-      "url": "https://mgker-101-126-82-227.free.pinggy.net"
+      "name": "线路58",
+      "num": "58",
+      "url": "https://hxuam-115-190-116-107.free.pinggy.net"
     },
     {
       "name": "线路66",
@@ -46,6 +46,6 @@
       "url": "https://kayap-115-190-156-57.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-23T04:21:17.740279",
+  "updated_at": "2026-06-23T04:21:49.649290",
   "count": 9
 }
