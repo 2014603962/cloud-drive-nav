@@ -29,8 +29,23 @@
       "name": "线路59",
       "num": "59",
       "url": "https://ebftc-115-190-60-188.free.pinggy.net"
+    },
+    {
+      "name": "线路64",
+      "num": "64",
+      "url": "https://koqxz-180-184-97-156.free.pinggy.net"
+    },
+    {
+      "name": "线路65",
+      "num": "65",
+      "url": "https://mgker-101-126-82-227.free.pinggy.net"
+    },
+    {
+      "name": "线路66",
+      "num": "66",
+      "url": "https://kayap-115-190-156-57.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-23T04:15:26.849785",
-  "count": 6
+  "updated_at": "2026-06-23T04:15:58.649951",
+  "count": 9
 }
