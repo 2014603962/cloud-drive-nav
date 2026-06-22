@@ -31,16 +31,16 @@
       "url": "https://jktir-101-126-81-196.free.pinggy.net"
     },
     {
-      "name": "线路55",
-      "num": "55",
-      "url": "https://qkqtf-101-126-81-113.free.pinggy.net"
-    },
-    {
       "name": "线路80",
       "num": "80",
       "url": "https://okmsk-115-190-116-107.free.pinggy.net"
+    },
+    {
+      "name": "线路83",
+      "num": "83",
+      "url": "https://hwiia-115-190-116-137.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-23T04:52:11.239989",
+  "updated_at": "2026-06-23T04:52:43.069112",
   "count": 8
 }
