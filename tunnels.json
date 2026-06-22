@@ -16,16 +16,26 @@
       "url": "https://mcgnc-101-126-82-117.free.pinggy.net"
     },
     {
-      "name": "线路67",
-      "num": "67",
-      "url": "https://erxcy-101-126-46-191.free.pinggy.net"
-    },
-    {
       "name": "线路68",
       "num": "68",
       "url": "https://hhsrm-180-184-97-227.free.pinggy.net"
+    },
+    {
+      "name": "线路77",
+      "num": "77",
+      "url": "https://ikojb-101-126-81-32.free.pinggy.net"
+    },
+    {
+      "name": "线路75",
+      "num": "75",
+      "url": "https://yciap-115-190-60-188.free.pinggy.net"
+    },
+    {
+      "name": "线路78",
+      "num": "78",
+      "url": "https://tgqll-180-184-97-156.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-23T04:40:29.068440",
-  "count": 5
+  "updated_at": "2026-06-23T04:41:01.324593",
+  "count": 7
 }
