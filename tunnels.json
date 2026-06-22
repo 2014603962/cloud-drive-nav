@@ -9,6 +9,10 @@
       "url": "https://fxdev-101-126-82-227.free.pinggy.net"
     },
     {
+      "name": "线路11",
+      "url": "https://wtqvl-180-184-97-156.free.pinggy.net"
+    },
+    {
       "name": "线路2",
       "url": "https://yaodx-101-126-83-236.free.pinggy.net"
     },
@@ -35,12 +39,8 @@
     {
       "name": "线路8",
       "url": "https://gkzdy-101-126-83-197.free.pinggy.net"
-    },
-    {
-      "name": "线路9",
-      "url": "https://srspj-115-190-128-53.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-22T10:23:36.294327",
+  "updated_at": "2026-06-22T10:24:08.065601",
   "count": 10
 }
