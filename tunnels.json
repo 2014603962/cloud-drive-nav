@@ -13,6 +13,14 @@
       "url": "https://ajhoj-180-184-102-131.free.pinggy.net"
     },
     {
+      "name": "线路12",
+      "url": "https://vmhbs-180-184-97-136.free.pinggy.net"
+    },
+    {
+      "name": "线路13",
+      "url": "https://vyuzl-101-126-81-32.free.pinggy.net"
+    },
+    {
       "name": "线路2",
       "url": "https://muylx-115-190-156-127.free.pinggy.net"
     },
@@ -31,16 +39,8 @@
     {
       "name": "线路6",
       "url": "https://oswox-101-126-83-236.free.pinggy.net"
-    },
-    {
-      "name": "线路7",
-      "url": "https://mkepv-180-184-97-227.free.pinggy.net"
-    },
-    {
-      "name": "线路8",
-      "url": "https://abygl-101-126-81-196.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-22T11:39:21.405533",
+  "updated_at": "2026-06-22T11:39:53.624192",
   "count": 10
 }
