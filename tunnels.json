@@ -6,24 +6,9 @@
       "url": "https://jxatn-101-126-82-227.free.pinggy.net"
     },
     {
-      "name": "线路29",
-      "num": "29",
-      "url": "https://nwldt-101-126-82-227.free.pinggy.net"
-    },
-    {
-      "name": "线路35",
-      "num": "35",
-      "url": "https://ozhjb-101-126-82-117.free.pinggy.net"
-    },
-    {
       "name": "线路30",
       "num": "30",
       "url": "https://hsxyn-115-190-116-137.free.pinggy.net"
-    },
-    {
-      "name": "线路36",
-      "num": "36",
-      "url": "https://hzwrk-180-184-97-136.free.pinggy.net"
     },
     {
       "name": "线路28",
@@ -36,6 +21,6 @@
       "url": "https://jvatl-101-126-83-128.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-23T03:55:43.625520",
-  "count": 7
+  "updated_at": "2026-06-23T03:56:15.459169",
+  "count": 4
 }
