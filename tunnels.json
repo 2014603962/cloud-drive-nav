@@ -1,11 +1,6 @@
 {
   "tunnels": [
     {
-      "name": "线路60",
-      "num": "60",
-      "url": "https://cugtc-101-126-81-113.free.pinggy.net"
-    },
-    {
       "name": "线路55",
       "num": "55",
       "url": "https://qkqtf-101-126-81-113.free.pinggy.net"
@@ -16,9 +11,9 @@
       "url": "https://amvpx-101-126-83-83.free.pinggy.net"
     },
     {
-      "name": "线路65",
-      "num": "65",
-      "url": "https://mgker-101-126-82-227.free.pinggy.net"
+      "name": "线路72",
+      "num": "72",
+      "url": "https://mcgnc-101-126-82-117.free.pinggy.net"
     },
     {
       "name": "线路67",
@@ -29,18 +24,8 @@
       "name": "线路68",
       "num": "68",
       "url": "https://hhsrm-180-184-97-227.free.pinggy.net"
-    },
-    {
-      "name": "线路72",
-      "num": "72",
-      "url": "https://mcgnc-101-126-82-117.free.pinggy.net"
-    },
-    {
-      "name": "线路73",
-      "num": "73",
-      "url": "https://tpidu-101-126-83-83.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-23T04:39:57.298118",
-  "count": 8
+  "updated_at": "2026-06-23T04:40:29.068440",
+  "count": 5
 }
