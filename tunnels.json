@@ -34,8 +34,13 @@
       "name": "线路72",
       "num": "72",
       "url": "https://mcgnc-101-126-82-117.free.pinggy.net"
+    },
+    {
+      "name": "线路73",
+      "num": "73",
+      "url": "https://tpidu-101-126-83-83.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-23T04:34:37.489493",
-  "count": 7
+  "updated_at": "2026-06-23T04:35:09.390133",
+  "count": 8
 }
