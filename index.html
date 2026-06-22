@@ -398,7 +398,53 @@
     </div>
     <script>
         // 配置 - 使用相对路径加载数据，和页面同域名，兼容性更好
+        // 优先使用后端API，失败再用静态json
+        const API_URL = '/api/tunnels';
         const DATA_FILE = 'tunnels.json';
+        let realtimeApiBase = null;  // 实时API的基础地址
+        
+        // 检测是否支持实时API
+        async function detectRealtimeApi() {
+            // 先尝试相对路径（同域名下）
+            try {
+                const res = await fetch('/api/tunnels?t=' + Date.now(), {
+                    signal: AbortSignal.timeout(2000)
+                });
+                if (res.ok) {
+                    realtimeApiBase = '';
+                    console.log('✅ 检测到同域名实时API');
+                    return true;
+                }
+            } catch (e) {}
+            
+            // 再尝试从隧道列表里找一个可用的
+            try {
+                const res = await fetch('tunnels.json?t=' + Date.now());
+                if (res.ok) {
+                    const data = await res.json();
+                    const tunnels = data.tunnels || [];
+                    
+                    // 依次尝试前3个隧道
+                    for (let i = 0; i < Math.min(3, tunnels.length); i++) {
+                        try {
+                            const url = new URL(tunnels[i].url);
+                            const apiUrl = `${url.origin}/api/tunnels`;
+                            const testRes = await fetch(apiUrl + '?t=' + Date.now(), {
+                                signal: AbortSignal.timeout(3000)
+                            });
+                            if (testRes.ok) {
+                                realtimeApiBase = url.origin;
+                                console.log('✅ 找到可用实时API:', url.origin);
+                                return true;
+                            }
+                        } catch (e) {}
+                    }
+                }
+            } catch (e) {}
+            
+            console.log('⚠️ 未找到实时API，使用静态数据');
+            return false;
+        }
         const SPEED_TEST_SIZE = 100; // 测速文件大小，单位 KB
         
         // 状态
@@ -479,14 +525,39 @@
             try {
                 // 使用相对路径加载，和页面同域名，兼容性更好
                 const timestamp = Date.now();
-                const url = `${DATA_FILE}?t=${timestamp}`;
                 
-                const response = await fetch(url);
-                if (!response.ok) {
-                    throw new Error('加载失败');
+                // 优先从实时API加载
+                let data = null;
+                let isRealtime = false;
+                
+                if (realtimeApiBase !== null) {
+                    try {
+                        const apiUrl = realtimeApiBase + API_URL + '?t=' + timestamp;
+                        const apiResponse = await fetch(apiUrl, {
+                            signal: AbortSignal.timeout(3000)
+                        });
+                        if (apiResponse.ok) {
+                            const apiData = await apiResponse.json();
+                            data = apiData.data || apiData;
+                            isRealtime = true;
+                            console.log('✅ 从实时API加载成功');
+                        }
+                    } catch (e) {
+                        console.log('⚠️ 实时API加载失败，尝试静态json', e);
+                        realtimeApiBase = null;  // 重置，下次重新检测
+                    }
                 }
                 
-                const data = await response.json();
+                // API失败的话，从静态json加载
+                if (!data) {
+                    const response = await fetch(`${DATA_FILE}?t=${timestamp}`);
+                    if (!response.ok) {
+                        throw new Error('加载失败');
+                    }
+                    data = await response.json();
+                    console.log('📄 从静态json加载');
+                }
+                
                 tunnels = data.tunnels || [];
                 lastUpdate = data.updated_at || null;
                 
@@ -622,10 +693,23 @@
         
         // 启动新隧道
         async function startNewTunnel() {
-            // 找一条在线的隧道来调用API
+            // 直接调用当前域名的后端API启动新隧道
+            try {
+                const response = await fetch('/api/tunnels/start', {
+                    method: 'POST'
+                });
+                if (response.ok) {
+                    const data = await response.json();
+                    console.log('✅ 新隧道启动成功', data);
+                    return true;
+                }
+            } catch (e) {
+                console.log('⚠️ 直接调用API失败，尝试通过隧道调用', e);
+            }
+            
+            // 失败的话，fallback到原来的方式：找一条在线隧道调用
             const onlineTunnel = tunnels.find(t => t.status === 'online');
             if (!onlineTunnel) {
-                // 如果没有检测到在线的，就用第一条试试
                 if (tunnels.length > 0) {
                     return await startNewTunnelFromUrl(tunnels[0].url);
                 }
@@ -838,7 +922,10 @@
         
         // 页面加载时自动加载
         window.addEventListener('load', () => {
-            loadTunnels();
+            // 先检测实时API
+            detectRealtimeApi().then(() => {
+                loadTunnels();
+            });
             
             // 已移除自动刷新，改为手动刷新
         });
