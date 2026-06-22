@@ -39,8 +39,28 @@
     {
       "name": "线路5",
       "url": "https://acyqs-115-190-116-128.free.pinggy.net"
+    },
+    {
+      "name": "线路6",
+      "url": "https://lmtlj-101-126-81-196.free.pinggy.net"
+    },
+    {
+      "name": "线路7",
+      "url": "https://kqtcv-115-190-156-57.free.pinggy.net"
+    },
+    {
+      "name": "线路8",
+      "url": "https://dcjcy-115-190-60-188.free.pinggy.net"
+    },
+    {
+      "name": "线路9",
+      "url": "https://pcded-180-184-87-78.free.pinggy.net"
+    },
+    {
+      "name": "线路_autostart",
+      "url": "https://rmaqm-180-184-102-49.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-22T23:21:22.816297",
-  "count": 10
+  "updated_at": "2026-06-22T23:21:49.446236",
+  "count": 15
 }
