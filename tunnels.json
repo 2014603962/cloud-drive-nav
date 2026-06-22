@@ -25,6 +25,18 @@
       "url": "https://ymexv-101-126-82-117.free.pinggy.net"
     },
     {
+      "name": "线路15",
+      "url": "https://qrzsa-101-126-83-197.free.pinggy.net"
+    },
+    {
+      "name": "线路16",
+      "url": "https://pzwfz-180-184-102-131.free.pinggy.net"
+    },
+    {
+      "name": "线路17",
+      "url": "https://nhmdn-115-190-60-188.free.pinggy.net"
+    },
+    {
       "name": "线路2",
       "url": "https://rmaqm-180-184-102-49.free.pinggy.net"
     },
@@ -61,6 +73,6 @@
       "url": "https://rmaqm-180-184-102-49.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-22T23:24:49.263472",
-  "count": 15
+  "updated_at": "2026-06-22T23:25:21.076690",
+  "count": 18
 }
