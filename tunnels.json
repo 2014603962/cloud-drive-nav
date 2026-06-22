@@ -1,24 +1,24 @@
 {
   "tunnels": [
     {
-      "name": "线路57",
-      "num": "57",
-      "url": "https://gfxqa-180-184-87-220.free.pinggy.net"
+      "name": "线路60",
+      "num": "60",
+      "url": "https://iemkz-115-190-63-37.free.pinggy.net"
     },
     {
-      "name": "线路55",
-      "num": "55",
-      "url": "https://wpgzy-101-126-83-236.free.pinggy.net"
+      "name": "线路61",
+      "num": "61",
+      "url": "https://flhho-180-184-102-131.free.pinggy.net"
     },
     {
-      "name": "线路52",
-      "num": "52",
-      "url": "https://uvqyx-101-126-88-195.free.pinggy.net"
+      "name": "线路62",
+      "num": "62",
+      "url": "https://jnwsw-180-184-97-136.free.pinggy.net"
     },
     {
-      "name": "线路53",
-      "num": "53",
-      "url": "https://ojije-101-126-83-197.free.pinggy.net"
+      "name": "线路63",
+      "num": "63",
+      "url": "https://xopgk-101-126-83-236.free.pinggy.net"
     },
     {
       "name": "线路51",
@@ -31,16 +31,21 @@
       "url": "https://dqfbj-101-126-47-141.free.pinggy.net"
     },
     {
+      "name": "线路55",
+      "num": "55",
+      "url": "https://wpgzy-101-126-83-236.free.pinggy.net"
+    },
+    {
+      "name": "线路57",
+      "num": "57",
+      "url": "https://gfxqa-180-184-87-220.free.pinggy.net"
+    },
+    {
       "name": "线路58",
       "num": "58",
       "url": "https://rhpew-101-126-88-195.free.pinggy.net"
-    },
-    {
-      "name": "线路45",
-      "num": "45",
-      "url": "https://ighrr-101-126-81-113.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-23T01:55:22.981767",
-  "count": 8
+  "updated_at": "2026-06-23T01:55:54.692672",
+  "count": 9
 }
