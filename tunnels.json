@@ -13,6 +13,14 @@
       "url": "https://hrlcz-101-126-82-227.free.pinggy.net"
     },
     {
+      "name": "线路12",
+      "url": "https://ulpio-101-126-83-237.free.pinggy.net"
+    },
+    {
+      "name": "线路13",
+      "url": "https://pptea-115-190-46-46.free.pinggy.net"
+    },
+    {
       "name": "线路2",
       "url": "https://hyngf-101-126-83-102.free.pinggy.net"
     },
@@ -31,16 +39,8 @@
     {
       "name": "线路6",
       "url": "https://bqnlv-115-190-46-46.free.pinggy.net"
-    },
-    {
-      "name": "线路7",
-      "url": "https://qvawv-115-190-116-107.free.pinggy.net"
-    },
-    {
-      "name": "线路8",
-      "url": "https://wwbpj-180-184-102-49.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-22T08:07:52.937441",
+  "updated_at": "2026-06-22T08:08:24.652787",
   "count": 10
 }
