@@ -5,6 +5,10 @@
       "url": "https://stohh-115-190-116-137.free.pinggy.net"
     },
     {
+      "name": "线路10",
+      "url": "https://lbbke-101-126-81-196.free.pinggy.net"
+    },
+    {
       "name": "线路2",
       "url": "https://muylx-115-190-156-127.free.pinggy.net"
     },
@@ -21,10 +25,22 @@
       "url": "https://qkrzj-115-190-156-127.free.pinggy.net"
     },
     {
-      "name": "线路_autostart",
-      "url": "https://stohh-115-190-116-137.free.pinggy.net"
+      "name": "线路6",
+      "url": "https://oswox-101-126-83-236.free.pinggy.net"
+    },
+    {
+      "name": "线路7",
+      "url": "https://mkepv-180-184-97-227.free.pinggy.net"
+    },
+    {
+      "name": "线路8",
+      "url": "https://abygl-101-126-81-196.free.pinggy.net"
+    },
+    {
+      "name": "线路9",
+      "url": "https://sdjff-115-190-22-11.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-22T11:34:03.111151",
-  "count": 6
+  "updated_at": "2026-06-22T11:34:34.879579",
+  "count": 10
 }
