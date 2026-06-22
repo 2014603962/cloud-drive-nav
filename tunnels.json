@@ -5,6 +5,10 @@
       "url": "https://mxgxt-180-184-97-101.free.pinggy.net"
     },
     {
+      "name": "线路10",
+      "url": "https://nqeyj-101-126-81-113.free.pinggy.net"
+    },
+    {
       "name": "线路2",
       "url": "https://ufngj-101-126-31-190.free.pinggy.net"
     },
@@ -21,10 +25,22 @@
       "url": "https://ffdzm-101-126-88-195.free.pinggy.net"
     },
     {
-      "name": "线路_autostart",
-      "url": "https://mxgxt-180-184-97-101.free.pinggy.net"
+      "name": "线路6",
+      "url": "https://xkbfm-101-126-82-117.free.pinggy.net"
+    },
+    {
+      "name": "线路7",
+      "url": "https://umahc-101-126-81-70.free.pinggy.net"
+    },
+    {
+      "name": "线路8",
+      "url": "https://jvtub-101-126-81-70.free.pinggy.net"
+    },
+    {
+      "name": "线路9",
+      "url": "https://pxxfq-101-126-81-70.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-22T17:41:07.817488",
-  "count": 6
+  "updated_at": "2026-06-22T17:41:39.996033",
+  "count": 10
 }
