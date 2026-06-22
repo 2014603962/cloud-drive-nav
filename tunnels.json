@@ -5,6 +5,10 @@
       "url": "https://lixkb-180-184-97-136.free.pinggy.net"
     },
     {
+      "name": "线路10",
+      "url": "https://gqytd-115-190-60-188.free.pinggy.net"
+    },
+    {
       "name": "线路2",
       "url": "https://ynkco-101-126-45-29.free.pinggy.net"
     },
@@ -21,10 +25,22 @@
       "url": "https://illgy-115-190-63-37.free.pinggy.net"
     },
     {
-      "name": "线路_autostart",
-      "url": "https://lixkb-180-184-97-136.free.pinggy.net"
+      "name": "线路6",
+      "url": "https://mbeyy-180-184-97-156.free.pinggy.net"
+    },
+    {
+      "name": "线路7",
+      "url": "https://nsbik-115-190-128-53.free.pinggy.net"
+    },
+    {
+      "name": "线路8",
+      "url": "https://zwhjr-101-126-45-29.free.pinggy.net"
+    },
+    {
+      "name": "线路9",
+      "url": "https://nrpcr-115-190-156-127.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-22T08:29:01.937614",
-  "count": 6
+  "updated_at": "2026-06-22T08:29:34.184928",
+  "count": 10
 }
