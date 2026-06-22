@@ -16,11 +16,6 @@
       "url": "https://qkqtf-101-126-81-113.free.pinggy.net"
     },
     {
-      "name": "线路64",
-      "num": "64",
-      "url": "https://koqxz-180-184-97-156.free.pinggy.net"
-    },
-    {
       "name": "线路61",
       "num": "61",
       "url": "https://pnkkh-101-126-91-206.free.pinggy.net"
@@ -44,8 +39,23 @@
       "name": "线路66",
       "num": "66",
       "url": "https://kayap-115-190-156-57.free.pinggy.net"
+    },
+    {
+      "name": "线路69",
+      "num": "69",
+      "url": "https://vrdxo-115-190-63-37.free.pinggy.net"
+    },
+    {
+      "name": "线路67",
+      "num": "67",
+      "url": "https://erxcy-101-126-46-191.free.pinggy.net"
+    },
+    {
+      "name": "线路68",
+      "num": "68",
+      "url": "https://hhsrm-180-184-97-227.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-23T04:21:49.649290",
-  "count": 9
+  "updated_at": "2026-06-23T04:22:21.521827",
+  "count": 11
 }
