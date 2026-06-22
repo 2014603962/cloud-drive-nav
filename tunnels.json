@@ -2,45 +2,17 @@
   "tunnels": [
     {
       "name": "线路1",
-      "url": "https://mxgxt-180-184-97-101.free.pinggy.net"
-    },
-    {
-      "name": "线路10",
-      "url": "https://nqeyj-101-126-81-113.free.pinggy.net"
-    },
-    {
-      "name": "线路11",
-      "url": "https://lpyyq-115-190-128-53.free.pinggy.net"
-    },
-    {
-      "name": "线路12",
-      "url": "https://rvcpr-101-126-83-197.free.pinggy.net"
-    },
-    {
-      "name": "线路13",
-      "url": "https://oxtud-115-190-63-37.free.pinggy.net"
-    },
-    {
-      "name": "线路14",
-      "url": "https://viouj-180-184-87-220.free.pinggy.net"
+      "url": "https://qqpcb-101-126-81-196.free.pinggy.net"
     },
     {
       "name": "线路2",
-      "url": "https://ufngj-101-126-31-190.free.pinggy.net"
+      "url": "https://fxoyi-180-184-102-131.free.pinggy.net"
     },
     {
       "name": "线路3",
-      "url": "https://fkeuw-115-190-60-188.free.pinggy.net"
-    },
-    {
-      "name": "线路4",
-      "url": "https://toftp-101-126-82-227.free.pinggy.net"
-    },
-    {
-      "name": "线路5",
-      "url": "https://ffdzm-101-126-88-195.free.pinggy.net"
+      "url": "https://wesio-101-126-83-128.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-22T17:51:46.599984",
-  "count": 10
+  "updated_at": "2026-06-22T20:23:10.707427",
+  "count": 3
 }
