@@ -21,6 +21,10 @@
       "url": "https://vyuzl-101-126-81-32.free.pinggy.net"
     },
     {
+      "name": "线路14",
+      "url": "https://lxfrv-101-126-83-102.free.pinggy.net"
+    },
+    {
       "name": "线路2",
       "url": "https://muylx-115-190-156-127.free.pinggy.net"
     },
@@ -35,12 +39,8 @@
     {
       "name": "线路5",
       "url": "https://qkrzj-115-190-156-127.free.pinggy.net"
-    },
-    {
-      "name": "线路6",
-      "url": "https://oswox-101-126-83-236.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-22T11:39:53.624192",
+  "updated_at": "2026-06-22T11:40:25.384089",
   "count": 10
 }
