@@ -584,15 +584,28 @@
                 // 开始检测状态
                 checkAllTunnels();
                 
-                // 自动启动新隧道（后台执行）
+                // 自动启动新隧道（调用refresh接口，立即返回最新列表）
                 if (autoStart && tunnels.length > 0) {
                     setTimeout(() => {
-                        startNewTunnel().then(success => {
-                            if (success) {
+                        refreshTunnels().then(result => {
+                            if (result && result.success) {
+                                showToast('✅ 刷新成功！新增' + (result.data?.new_count || 0) + '条线路，共' + (result.data?.count || 0) + '条可用');
+                                // 立即更新隧道列表
+                                if (result.data?.tunnels) {
+                                    tunnels = result.data.tunnels.reverse().map((tunnel, index) => ({
+                                        ...tunnel,
+                                        name: '线路' + (index + 1),
+                                        status: 'unknown',
+                                        speed: null
+                                    }));
+                                    renderTunnels();
+                                    checkAllTunnels();
+                                }
+                            } else {
                                 showToast('🚀 新线路启动中，30秒后刷新可见');
                                 // 35秒后自动刷新一次，让用户看到新线路
                                 setTimeout(() => {
-                                    loadTunnels(false); // false表示不再启动新隧道，避免循环
+                                    loadTunnels(false);
                                 }, 35000);
                             }
                         });
@@ -741,6 +754,57 @@
             } catch (error) {
                 console.log('启动新隧道失败:', error);
                 return false;
+            }
+        }
+        
+        // 刷新隧道：启动新隧道并立即返回最新列表
+        async function refreshTunnels() {
+            // 先尝试直接调用当前域名的API
+            try {
+                const response = await fetch('/api/tunnels/refresh', {
+                    method: 'POST'
+                });
+                if (response.ok) {
+                    const data = await response.json();
+                    console.log('✅ 刷新成功', data);
+                    return data;
+                }
+            } catch (e) {
+                console.log('⚠️ 直接调用refresh失败，尝试通过隧道调用', e);
+            }
+            
+            // 失败的话，找一条在线隧道调用
+            const onlineTunnel = tunnels.find(t => t.status === 'online');
+            if (!onlineTunnel) {
+                if (tunnels.length > 0) {
+                    return await refreshTunnelsFromUrl(tunnels[0].url);
+                }
+                return null;
+            }
+            return await refreshTunnelsFromUrl(onlineTunnel.url);
+        }
+        
+        async function refreshTunnelsFromUrl(baseUrl) {
+            try {
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 30000); // 刷新需要更长时间
+                
+                const response = await fetch(baseUrl + '/api/tunnels/refresh', {
+                    method: 'POST',
+                    signal: controller.signal
+                });
+                
+                clearTimeout(timeoutId);
+                
+                if (response.ok) {
+                    const data = await response.json();
+                    console.log('刷新成功:', data);
+                    return data;
+                }
+                return null;
+            } catch (error) {
+                console.log('刷新隧道失败:', error);
+                return null;
             }
         }
         
