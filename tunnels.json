@@ -1,41 +1,54 @@
 {
   "tunnels": [
     {
-      "name": "线路8",
-      "num": "8",
-      "url": "https://klpif-101-126-88-195.free.pinggy.net"
+      "name": "线路1",
+      "url": "https://tdfbs-101-126-91-131.free.pinggy.net"
     },
     {
       "name": "线路10",
-      "num": "10",
-      "url": "https://deiub-115-190-46-46.free.pinggy.net"
-    },
-    {
-      "name": "线路3",
-      "num": "3",
-      "url": "https://upuol-115-190-116-137.free.pinggy.net"
-    },
-    {
-      "name": "线路1",
-      "num": "1",
-      "url": "https://mnnfg-115-190-116-107.free.pinggy.net"
-    },
-    {
-      "name": "线路5",
-      "num": "5",
-      "url": "https://edtry-115-190-128-53.free.pinggy.net"
-    },
-    {
-      "name": "线路6",
-      "num": "6",
-      "url": "https://axesl-115-190-114-174.free.pinggy.net"
+      "url": "https://sjfmb-115-190-116-137.free.pinggy.net"
     },
     {
       "name": "线路11",
-      "num": "11",
-      "url": "https://tqsed-101-126-81-70.free.pinggy.net"
+      "url": "https://wuius-101-126-46-191.free.pinggy.net"
+    },
+    {
+      "name": "线路2",
+      "url": "https://tdaea-180-184-87-78.free.pinggy.net"
+    },
+    {
+      "name": "线路3",
+      "url": "https://xwdcw-115-190-116-128.free.pinggy.net"
+    },
+    {
+      "name": "线路4",
+      "url": "https://krnbj-101-126-83-237.free.pinggy.net"
+    },
+    {
+      "name": "线路5",
+      "url": "https://gtvhx-115-190-116-137.free.pinggy.net"
+    },
+    {
+      "name": "线路6",
+      "url": "https://pinvs-101-126-83-236.free.pinggy.net"
+    },
+    {
+      "name": "线路7",
+      "url": "https://fnvtt-101-126-83-237.free.pinggy.net"
+    },
+    {
+      "name": "线路8",
+      "url": "https://utdzr-101-126-91-206.free.pinggy.net"
+    },
+    {
+      "name": "线路9",
+      "url": "https://sojcj-180-184-97-227.free.pinggy.net"
+    },
+    {
+      "name": "线路_autostart",
+      "url": "https://tdfbs-101-126-91-131.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-23T14:29:27.908850",
-  "count": 7
+  "updated_at": "2026-06-23T17:21:48.745490",
+  "count": 12
 }
