@@ -21,21 +21,21 @@
       "url": "https://sjrhk-101-126-91-206.free.pinggy.net"
     },
     {
-      "name": "线路4",
-      "num": "4",
-      "url": "https://wugbe-101-126-45-29.free.pinggy.net"
+      "name": "线路12",
+      "num": "12",
+      "url": "https://myxdl-180-184-97-136.free.pinggy.net"
+    },
+    {
+      "name": "线路16",
+      "num": "16",
+      "url": "https://coqmj-101-126-81-113.free.pinggy.net"
     },
     {
       "name": "线路2",
       "num": "2",
       "url": "https://qulpi-180-184-102-131.free.pinggy.net"
-    },
-    {
-      "name": "线路_autostart",
-      "num": "_autostart",
-      "url": "https://qulpi-180-184-102-131.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-24T01:05:14.326830",
+  "updated_at": "2026-06-24T01:05:46.143510",
   "count": 7
 }
