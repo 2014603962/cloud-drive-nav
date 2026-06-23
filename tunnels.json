@@ -2,53 +2,35 @@
   "tunnels": [
     {
       "name": "线路1",
+      "num": "1",
       "url": "https://apota-115-190-116-128.free.pinggy.net"
     },
     {
-      "name": "线路10",
-      "url": "https://dpnrc-115-190-114-174.free.pinggy.net"
-    },
-    {
-      "name": "线路11",
-      "url": "https://jbvey-115-190-60-188.free.pinggy.net"
-    },
-    {
-      "name": "线路2",
-      "url": "https://frghl-180-184-97-227.free.pinggy.net"
-    },
-    {
-      "name": "线路3",
-      "url": "https://qlfsn-101-126-81-196.free.pinggy.net"
-    },
-    {
-      "name": "线路4",
-      "url": "https://fsrhk-115-190-116-128.free.pinggy.net"
-    },
-    {
-      "name": "线路5",
-      "url": "https://yseyg-115-190-60-188.free.pinggy.net"
-    },
-    {
-      "name": "线路6",
-      "url": "https://qhdqt-101-126-82-227.free.pinggy.net"
-    },
-    {
       "name": "线路7",
+      "num": "7",
       "url": "https://byyph-101-126-83-236.free.pinggy.net"
     },
     {
-      "name": "线路8",
-      "url": "https://ixkgo-115-190-116-107.free.pinggy.net"
+      "name": "线路3",
+      "num": "3",
+      "url": "https://qlfsn-101-126-81-196.free.pinggy.net"
     },
     {
       "name": "线路9",
+      "num": "9",
       "url": "https://nzkil-101-126-83-128.free.pinggy.net"
     },
     {
+      "name": "线路11",
+      "num": "11",
+      "url": "https://jbvey-115-190-60-188.free.pinggy.net"
+    },
+    {
       "name": "线路_autostart",
+      "num": "_autostart",
       "url": "https://qlfsn-101-126-81-196.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-23T22:42:46.191610",
-  "count": 12
+  "updated_at": "2026-06-23T22:43:17.927448",
+  "count": 6
 }
