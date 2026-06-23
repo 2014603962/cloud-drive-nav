@@ -4,8 +4,38 @@
       "name": "线路35",
       "num": "35",
       "url": "https://nhpga-101-126-83-83.free.pinggy.net"
+    },
+    {
+      "name": "线路48",
+      "num": "48",
+      "url": "https://bnvjh-101-126-83-102.free.pinggy.net"
+    },
+    {
+      "name": "线路49",
+      "num": "49",
+      "url": "https://tslkn-180-184-97-136.free.pinggy.net"
+    },
+    {
+      "name": "线路45",
+      "num": "45",
+      "url": "https://tztdx-101-126-82-117.free.pinggy.net"
+    },
+    {
+      "name": "线路54",
+      "num": "54",
+      "url": "https://yefkr-101-126-82-76.free.pinggy.net"
+    },
+    {
+      "name": "线路52",
+      "num": "52",
+      "url": "https://flbol-101-126-82-227.free.pinggy.net"
+    },
+    {
+      "name": "线路53",
+      "num": "53",
+      "url": "https://abiax-115-190-156-57.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-23T23:19:35.346002",
-  "count": 1
+  "updated_at": "2026-06-23T23:20:07.181883",
+  "count": 7
 }
