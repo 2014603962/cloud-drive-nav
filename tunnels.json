@@ -9,23 +9,8 @@
       "name": "线路3",
       "num": "3",
       "url": "https://vucbr-180-184-97-136.free.pinggy.net"
-    },
-    {
-      "name": "线路7",
-      "num": "7",
-      "url": "https://rvskw-101-126-82-117.free.pinggy.net"
-    },
-    {
-      "name": "线路2",
-      "num": "2",
-      "url": "https://xxfbh-115-190-46-46.free.pinggy.net"
-    },
-    {
-      "name": "线路_autostart",
-      "num": "_autostart",
-      "url": "https://xxfbh-115-190-46-46.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-23T10:26:51.781569",
-  "count": 5
+  "updated_at": "2026-06-23T10:27:23.780797",
+  "count": 2
 }
