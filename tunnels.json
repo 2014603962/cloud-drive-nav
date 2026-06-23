@@ -1,51 +1,54 @@
 {
   "tunnels": [
     {
-      "name": "线路12",
-      "num": "12",
-      "url": "https://xvgfz-101-126-81-70.free.pinggy.net"
+      "name": "线路1",
+      "url": "https://hxmvo-115-190-46-46.free.pinggy.net"
     },
     {
-      "name": "线路15",
-      "num": "15",
-      "url": "https://nbycl-101-126-45-29.free.pinggy.net"
+      "name": "线路10",
+      "url": "https://ssxli-101-126-18-14.free.pinggy.net"
     },
     {
-      "name": "线路25",
-      "num": "25",
-      "url": "https://wngax-101-126-83-236.free.pinggy.net"
+      "name": "线路11",
+      "url": "https://nxhbx-101-126-45-29.free.pinggy.net"
     },
     {
-      "name": "线路20",
-      "num": "20",
-      "url": "https://svrox-115-190-128-53.free.pinggy.net"
+      "name": "线路2",
+      "url": "https://rnrgs-101-126-91-206.free.pinggy.net"
     },
     {
-      "name": "线路24",
-      "num": "24",
-      "url": "https://kcgwv-180-184-102-131.free.pinggy.net"
+      "name": "线路3",
+      "url": "https://weidv-180-184-97-156.free.pinggy.net"
     },
     {
-      "name": "线路19",
-      "num": "19",
-      "url": "https://thkpm-101-126-31-190.free.pinggy.net"
+      "name": "线路4",
+      "url": "https://cqefr-115-190-116-128.free.pinggy.net"
     },
     {
-      "name": "线路21",
-      "num": "21",
-      "url": "https://jftya-101-126-91-206.free.pinggy.net"
+      "name": "线路5",
+      "url": "https://jnyfw-101-126-45-29.free.pinggy.net"
     },
     {
-      "name": "线路23",
-      "num": "23",
-      "url": "https://gutig-180-184-87-78.free.pinggy.net"
+      "name": "线路6",
+      "url": "https://monzy-115-190-116-107.free.pinggy.net"
     },
     {
-      "name": "线路17",
-      "num": "17",
-      "url": "https://hzgcq-115-190-116-107.free.pinggy.net"
+      "name": "线路7",
+      "url": "https://iswnp-115-190-22-11.free.pinggy.net"
+    },
+    {
+      "name": "线路8",
+      "url": "https://mlevl-115-190-116-128.free.pinggy.net"
+    },
+    {
+      "name": "线路9",
+      "url": "https://uqdkk-101-126-83-236.free.pinggy.net"
+    },
+    {
+      "name": "线路_autostart",
+      "url": "https://hxmvo-115-190-46-46.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-23T18:04:20.546675",
-  "count": 9
+  "updated_at": "2026-06-23T18:50:53.092082",
+  "count": 12
 }
