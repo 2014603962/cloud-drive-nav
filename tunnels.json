@@ -1,54 +1,21 @@
 {
   "tunnels": [
     {
-      "name": "线路13",
-      "url": "https://gieie-180-184-102-49.free.pinggy.net"
+      "name": "线路29",
+      "num": "29",
+      "url": "https://wjzbu-101-126-81-70.free.pinggy.net"
     },
     {
       "name": "线路16",
+      "num": "16",
       "url": "https://jkboo-101-126-81-70.free.pinggy.net"
     },
     {
-      "name": "线路20",
-      "url": "https://euksg-101-126-18-14.free.pinggy.net"
-    },
-    {
-      "name": "线路21",
-      "url": "https://mqwqw-180-184-87-220.free.pinggy.net"
-    },
-    {
-      "name": "线路22",
-      "url": "https://ogrtg-180-184-97-101.free.pinggy.net"
-    },
-    {
-      "name": "线路23",
-      "url": "https://dcqih-180-184-97-101.free.pinggy.net"
-    },
-    {
-      "name": "线路24",
-      "url": "https://luouj-115-190-22-11.free.pinggy.net"
-    },
-    {
-      "name": "线路25",
-      "url": "https://bstav-101-126-83-236.free.pinggy.net"
-    },
-    {
-      "name": "线路26",
-      "url": "https://uariz-101-126-83-83.free.pinggy.net"
-    },
-    {
-      "name": "线路27",
-      "url": "https://fhivp-101-126-91-131.free.pinggy.net"
-    },
-    {
-      "name": "线路28",
-      "url": "https://bitld-115-190-60-188.free.pinggy.net"
-    },
-    {
-      "name": "线路29",
-      "url": "https://wjzbu-101-126-81-70.free.pinggy.net"
+      "name": "线路13",
+      "num": "13",
+      "url": "https://gieie-180-184-102-49.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-23T23:00:56.282709",
-  "count": 12
+  "updated_at": "2026-06-23T23:01:28.524037",
+  "count": 3
 }
