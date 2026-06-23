@@ -1,56 +1,54 @@
 {
   "tunnels": [
     {
+      "name": "线路1",
+      "url": "https://mnnfg-115-190-116-107.free.pinggy.net"
+    },
+    {
       "name": "线路10",
-      "num": "10",
-      "url": "https://zscfm-101-126-81-113.free.pinggy.net"
+      "url": "https://deiub-115-190-46-46.free.pinggy.net"
     },
     {
-      "name": "线路18",
-      "num": "18",
-      "url": "https://rpgao-101-126-82-227.free.pinggy.net"
-    },
-    {
-      "name": "线路20",
-      "num": "20",
-      "url": "https://dqymc-101-126-88-195.free.pinggy.net"
+      "name": "线路11",
+      "url": "https://tqsed-101-126-81-70.free.pinggy.net"
     },
     {
       "name": "线路2",
-      "num": "2",
-      "url": "https://wxupq-180-184-97-227.free.pinggy.net"
+      "url": "https://dpgdi-115-190-116-137.free.pinggy.net"
     },
     {
-      "name": "线路13",
-      "num": "13",
-      "url": "https://alfrv-115-190-156-127.free.pinggy.net"
+      "name": "线路3",
+      "url": "https://upuol-115-190-116-137.free.pinggy.net"
     },
     {
-      "name": "线路19",
-      "num": "19",
-      "url": "https://szgat-180-184-102-49.free.pinggy.net"
+      "name": "线路4",
+      "url": "https://gkpbu-101-126-81-196.free.pinggy.net"
     },
     {
-      "name": "线路12",
-      "num": "12",
-      "url": "https://kxnze-101-126-83-236.free.pinggy.net"
+      "name": "线路5",
+      "url": "https://edtry-115-190-128-53.free.pinggy.net"
     },
     {
-      "name": "线路14",
-      "num": "14",
-      "url": "https://kzknb-180-184-87-78.free.pinggy.net"
+      "name": "线路6",
+      "url": "https://axesl-115-190-114-174.free.pinggy.net"
     },
     {
-      "name": "线路15",
-      "num": "15",
-      "url": "https://ktria-101-126-83-197.free.pinggy.net"
+      "name": "线路7",
+      "url": "https://txflo-101-126-81-113.free.pinggy.net"
     },
     {
-      "name": "线路17",
-      "num": "17",
-      "url": "https://eowzg-115-190-116-107.free.pinggy.net"
+      "name": "线路8",
+      "url": "https://klpif-101-126-88-195.free.pinggy.net"
+    },
+    {
+      "name": "线路9",
+      "url": "https://smafh-101-126-81-70.free.pinggy.net"
+    },
+    {
+      "name": "线路_autostart",
+      "url": "https://dpgdi-115-190-116-137.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-23T13:32:08.603930",
-  "count": 10
+  "updated_at": "2026-06-23T13:50:40.842571",
+  "count": 12
 }
