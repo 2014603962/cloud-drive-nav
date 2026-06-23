@@ -1,19 +1,19 @@
 {
   "tunnels": [
     {
-      "name": "线路11",
-      "num": "11",
-      "url": "https://cktxc-115-190-116-107.free.pinggy.net"
-    },
-    {
       "name": "线路10",
       "num": "10",
       "url": "https://zscfm-101-126-81-113.free.pinggy.net"
     },
     {
-      "name": "线路1",
-      "num": "1",
-      "url": "https://ypfuy-101-126-18-14.free.pinggy.net"
+      "name": "线路18",
+      "num": "18",
+      "url": "https://rpgao-101-126-82-227.free.pinggy.net"
+    },
+    {
+      "name": "线路20",
+      "num": "20",
+      "url": "https://dqymc-101-126-88-195.free.pinggy.net"
     },
     {
       "name": "线路2",
@@ -21,9 +21,24 @@
       "url": "https://wxupq-180-184-97-227.free.pinggy.net"
     },
     {
+      "name": "线路13",
+      "num": "13",
+      "url": "https://alfrv-115-190-156-127.free.pinggy.net"
+    },
+    {
+      "name": "线路19",
+      "num": "19",
+      "url": "https://szgat-180-184-102-49.free.pinggy.net"
+    },
+    {
       "name": "线路12",
       "num": "12",
       "url": "https://kxnze-101-126-83-236.free.pinggy.net"
+    },
+    {
+      "name": "线路14",
+      "num": "14",
+      "url": "https://kzknb-180-184-87-78.free.pinggy.net"
     },
     {
       "name": "线路15",
@@ -36,6 +51,6 @@
       "url": "https://eowzg-115-190-116-107.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-23T13:18:37.968829",
-  "count": 7
+  "updated_at": "2026-06-23T13:19:09.722589",
+  "count": 10
 }
