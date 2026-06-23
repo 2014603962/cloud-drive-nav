@@ -1,26 +1,11 @@
 {
   "tunnels": [
     {
-      "name": "线路11",
-      "num": "11",
-      "url": "https://wuius-101-126-46-191.free.pinggy.net"
-    },
-    {
-      "name": "线路1",
-      "num": "1",
-      "url": "https://tdfbs-101-126-91-131.free.pinggy.net"
-    },
-    {
-      "name": "线路9",
-      "num": "9",
-      "url": "https://sojcj-180-184-97-227.free.pinggy.net"
-    },
-    {
       "name": "线路_autostart",
       "num": "_autostart",
       "url": "https://tdfbs-101-126-91-131.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-23T17:27:08.725523",
-  "count": 4
+  "updated_at": "2026-06-23T17:27:40.542857",
+  "count": 1
 }
