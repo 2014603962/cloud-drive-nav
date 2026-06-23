@@ -1,16 +1,54 @@
 {
   "tunnels": [
     {
-      "name": "线路49",
-      "num": "49",
-      "url": "https://tslkn-180-184-97-136.free.pinggy.net"
+      "name": "线路63",
+      "url": "https://zlntl-101-126-81-113.free.pinggy.net"
     },
     {
-      "name": "线路60",
-      "num": "60",
-      "url": "https://lyiys-101-126-81-70.free.pinggy.net"
+      "name": "线路64",
+      "url": "https://svivg-101-126-82-76.free.pinggy.net"
+    },
+    {
+      "name": "线路65",
+      "url": "https://ipfbk-115-190-116-128.free.pinggy.net"
+    },
+    {
+      "name": "线路66",
+      "url": "https://zqryh-115-190-156-57.free.pinggy.net"
+    },
+    {
+      "name": "线路67",
+      "url": "https://peqfi-180-184-97-227.free.pinggy.net"
+    },
+    {
+      "name": "线路68",
+      "url": "https://lbqxc-101-126-83-128.free.pinggy.net"
+    },
+    {
+      "name": "线路69",
+      "url": "https://olbsz-115-190-116-137.free.pinggy.net"
+    },
+    {
+      "name": "线路70",
+      "url": "https://zsgfo-101-126-88-195.free.pinggy.net"
+    },
+    {
+      "name": "线路71",
+      "url": "https://ctffk-180-184-102-131.free.pinggy.net"
+    },
+    {
+      "name": "线路72",
+      "url": "https://qlysa-180-184-87-78.free.pinggy.net"
+    },
+    {
+      "name": "线路73",
+      "url": "https://mrane-101-126-91-131.free.pinggy.net"
+    },
+    {
+      "name": "线路74",
+      "url": "https://fqnoc-180-184-87-220.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-23T23:31:48.915053",
-  "count": 2
+  "updated_at": "2026-06-23T23:32:20.786269",
+  "count": 12
 }
