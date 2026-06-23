@@ -1,26 +1,16 @@
 {
   "tunnels": [
     {
-      "name": "线路9",
-      "num": "9",
-      "url": "https://nzkil-101-126-83-128.free.pinggy.net"
+      "name": "线路16",
+      "num": "16",
+      "url": "https://jkboo-101-126-81-70.free.pinggy.net"
     },
     {
-      "name": "线路11",
-      "num": "11",
-      "url": "https://jbvey-115-190-60-188.free.pinggy.net"
-    },
-    {
-      "name": "线路3",
-      "num": "3",
-      "url": "https://qlfsn-101-126-81-196.free.pinggy.net"
-    },
-    {
-      "name": "线路_autostart",
-      "num": "_autostart",
-      "url": "https://qlfsn-101-126-81-196.free.pinggy.net"
+      "name": "线路13",
+      "num": "13",
+      "url": "https://gieie-180-184-102-49.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-23T22:49:08.427900",
-  "count": 4
+  "updated_at": "2026-06-23T22:49:40.229633",
+  "count": 2
 }
