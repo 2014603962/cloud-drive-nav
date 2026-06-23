@@ -1,46 +1,54 @@
 {
   "tunnels": [
     {
-      "name": "线路72",
-      "num": "72",
-      "url": "https://mcgnc-101-126-82-117.free.pinggy.net"
+      "name": "线路1",
+      "url": "https://qpmzz-180-184-97-136.free.pinggy.net"
     },
     {
-      "name": "线路68",
-      "num": "68",
-      "url": "https://hhsrm-180-184-97-227.free.pinggy.net"
+      "name": "线路10",
+      "url": "https://hnrbt-115-190-22-11.free.pinggy.net"
     },
     {
-      "name": "线路82",
-      "num": "82",
-      "url": "https://euscf-101-126-83-237.free.pinggy.net"
+      "name": "线路11",
+      "url": "https://kuohn-180-184-97-101.free.pinggy.net"
     },
     {
-      "name": "线路75",
-      "num": "75",
-      "url": "https://yciap-115-190-60-188.free.pinggy.net"
+      "name": "线路2",
+      "url": "https://ndyar-115-190-156-57.free.pinggy.net"
     },
     {
-      "name": "线路78",
-      "num": "78",
-      "url": "https://tgqll-180-184-97-156.free.pinggy.net"
+      "name": "线路3",
+      "url": "https://pxyia-101-126-81-196.free.pinggy.net"
     },
     {
-      "name": "线路81",
-      "num": "81",
-      "url": "https://jktir-101-126-81-196.free.pinggy.net"
+      "name": "线路4",
+      "url": "https://iwwda-101-126-46-191.free.pinggy.net"
     },
     {
-      "name": "线路80",
-      "num": "80",
-      "url": "https://okmsk-115-190-116-107.free.pinggy.net"
+      "name": "线路5",
+      "url": "https://reghr-115-190-116-137.free.pinggy.net"
     },
     {
-      "name": "线路83",
-      "num": "83",
-      "url": "https://hwiia-115-190-116-137.free.pinggy.net"
+      "name": "线路6",
+      "url": "https://akwsc-115-190-116-128.free.pinggy.net"
+    },
+    {
+      "name": "线路7",
+      "url": "https://zovgw-180-184-87-78.free.pinggy.net"
+    },
+    {
+      "name": "线路8",
+      "url": "https://ooncf-115-190-60-188.free.pinggy.net"
+    },
+    {
+      "name": "线路9",
+      "url": "https://tyael-115-190-116-107.free.pinggy.net"
+    },
+    {
+      "name": "线路_autostart",
+      "url": "https://pxyia-101-126-81-196.free.pinggy.net"
     }
   ],
-  "updated_at": "2026-06-23T04:57:30.501940",
-  "count": 8
+  "updated_at": "2026-06-23T09:33:20.194034",
+  "count": 12
 }
